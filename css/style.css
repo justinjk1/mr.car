@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "my-font";
+}
+
+:root {
+  --main-color: #e9c880;
+  --second-color: #674a4a;
+  --third-color: #b9c070;
+  --forth-color: #fff;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "my-font";
+  src: url("./Bitcheese.otf");
+}
+
+.fa-facebook {
+  color: rgb(87, 87, 147);
+  padding: 10px;
+}
+
+.fa-twitter {
+  color: skyblue;
+  padding: 10px;
+}
+
+.fa-instagram {
+  color: rgb(219, 106, 45);
+  padding: 10px;
+}
+.fa-whatsapp {
+  color: green;
+  padding: 10px;
+}
+
+.logo img {
+  transition: 0.5s;
+}
+
+.logo img:hover {
+  transform: rotate(360deg);
+}
+
+.nav-link a {
+  background: var(--second-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.nav-links a:hover {
+  background: var(--third-color);
+  color: var(--main-color);
+}
+
+#bar {
+  background-color: rgba(234, 232, 221, 0);
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  /* display: none; */
+}
+
+.banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: url("https://wallpapercave.com/wp/wp1817392.jpg");
+  background-size: cover;
+  background-position: center;
+  background-position: 50% 50%;
+  padding: 150px 0 0 150px;
+}
+​ .banner-box {
+  width: 50%;
+  height: auto;
+  /* background: pink; */
+}
+​ .car {
+  color: #fff;
+}
+h1.car-2 {
+  color: blueviolet;
+}
+
+p {
+  color: antiquewhite;
+}
+
+h2 {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: bolder;
+  margin: 6px 0;
+}
+
+​ .banner-box p {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+​ .banner-box button {
+  background: var(--fourth-color);
+  color: var(--second-color);
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+​ .banner-box button:hover {
+  background: var(--main-color);
+  color: var(--third-color);
+  cursor: pointer;
+}
+/* gallery start */
+
+#gallery {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(125, 84, 35);
+  padding: 30px;
+}
+#gallery h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+#gallery p {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.gallery-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.gallery-photos img {
+  flex: 1 1 25rem;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#service {
+  width: 100%;
+  height: auto;
+  background: #7e5806;
+  padding: 30px;
+}
+#service h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+#service p {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.service-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service-photos_card {
+  flex: 1 1 23rem;
+  height: 240px;
+  box-shadow: inset 0 0 3px 3px rgb(210, 208, 204);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-photo_card-img,
+.service-photo_card_text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.service-photo_card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.service-photo_card-text {
+  background: red;
+  transition: 0.5s;
+  transform: translateY(100%);
+  /* transform: scale(0); */
+  transform-origin: top right;
+}
+
+.service-photos_card:hover .service-photo_card_text {
+  /* transform: translate(0%); */
+  transform: translate(0%);
+}
+
+.service-photos_card-img,
+.service-photos_text-group {
+  transform: scale(1);
+}
+.service-photos_text_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+/*
+ ********************************************************************************************************************************************************************************************
+******************************************************************************** */
+
+@media (max-width: 600px) {
+  nav {
+    padding: 0 20px;
+  }
+  .logo span {
+    font-size: 1.2rem;
+  }
+  #bar {
+    display: block;
+  }
+
+  .social-link {
+    display: none;
+  }
+
+  .nav-link {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    background-color: aqua;
+    padding: 25px 100px;
+    transition: 0.5s;
+    transform: translateX(100%);
+  }
+
+  .show {
+    transform: translateX(0%);
+    /* display: block; */
+  }
+
+  .nav-link a {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}

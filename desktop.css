@@ -1,0 +1,32 @@
+@media (max-width: 1000px) {
+    body {
+        background: rgb(119, 128, 0);
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    }
+
+    @media (max-width: 1000px ) {
+         body {
+                background: rgb(200, 102, 200);
+            }
+    
+         h1 {
+                font-size: 2rem;
+            }
+    
+        }
+
+        @media (max-width: 1000px ) {
+         body {
+                  background: rgb(85, 209, 145);
+                    }
+        
+             h1 {
+                        font-size: 1rem;
+                    }
+        
+                }
